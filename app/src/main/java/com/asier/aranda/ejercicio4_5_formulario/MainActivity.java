@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.radio_Soltero:
                 if (checked)
-                   str = "Soltero";
+                    str = "Soltero";
                 break;
             case R.id.radio_Casado:
                 if (checked)
@@ -76,46 +76,46 @@ public class MainActivity extends AppCompatActivity {
                     str = "Viudo";
                 break;
         }
-         datosEstadoCivil=str;
+        datosEstadoCivil=str;
     }
 
-    public void onCheckboxClicked(View view) {
-        String prefe="";
-        if(deportes.isChecked()) {
-            prefe = "Deportes";
-            datosPreferencias=prefe;
-        }
-        else if(carreras.isChecked()){
-            prefe = "Carreras";
-            datosPreferencias=prefe;
-        }
-        else if(educacion.isChecked()){
-            prefe = "Educacion";
-            datosPreferencias=prefe;
-        }
-        else if(arte.isChecked())  {
-            prefe = "Arte";
-            datosPreferencias=prefe;
-        }
-        else if(videojuegos.isChecked()){
-            prefe = "Videojuegos";
-            datosPreferencias=prefe;
-        }
-        else if(familia.isChecked()){
-            prefe = "Familia";
-            datosPreferencias=prefe;
-        }
-        datosPreferencias="";
-    }
 
     public void enviarDatos(View view) {
+        String prefe="";
+        if(deportes.isChecked()) {
+            datosPreferencias +=" "+deportes.getText();
+        }
+        if(carreras.isChecked()){
+            datosPreferencias +=" "+carreras.getText();
+        }
+        if(educacion.isChecked()){
+            datosPreferencias +=" "+educacion.getText();
+        }
+        if(arte.isChecked())  {
+            datosPreferencias +=" "+arte.getText();
+        }
+        if(videojuegos.isChecked()){
+            datosPreferencias +=" "+videojuegos.getText();
+        }
+        if(familia.isChecked()){
+            datosPreferencias +=" "+familia.getText();
+        }
 
-       datosNombre=nombre.getText().toString();
-       datosApellido=apellido.getText().toString();
+        datosNombre=nombre.getText().toString();
+        datosApellido=apellido.getText().toString();
+        //datosPreferencias=prefe;
 
-        mostrarDatos.setText("Nombre: "+datosNombre+" Apellido: "+datosApellido+
-                             " Preferencias: "+datosPreferencias+
-                             " Estado Civil: "+datosEstadoCivil);
+
+        mostrarDatos.setText("Nombre: "+datosNombre +"\n" +
+                " Apellido: "+datosApellido+"\n" +
+                " Preferencias: "+datosPreferencias +"\n"+
+                " Estado Civil: "+datosEstadoCivil);
+
+        datosNombre="";
+        datosApellido="";
+        datosPreferencias="";
+        datosEstadoCivil="";
+
     }
 
 

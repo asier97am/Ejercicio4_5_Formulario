@@ -78,7 +78,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Deportes"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -88,7 +87,6 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Carreras"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/deportes" />
@@ -99,7 +97,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Educacion"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -109,7 +106,6 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Arte"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toBottomOf="@+id/educacion" />
@@ -119,7 +115,6 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="videojuegos"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toBottomOf="@+id/carreras" />
@@ -129,7 +124,6 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Familia"
-        android:onClick="onCheckboxClicked"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="@+id/guideline8"
         app:layout_constraintTop_toBottomOf="@+id/arte" />
@@ -249,8 +243,5 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.9" />
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
