@@ -56,27 +56,27 @@ public class MainActivity extends AppCompatActivity {
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
-        String str = "";// variable donde se almacenara el dato del radioButton
+        //String str = "";// variable donde se almacenara el dato del radioButton
         // Check which radio button was clicked
         switch(view.getId()) {
             case R.id.radio_Soltero:
                 if (checked)
-                    str = "Soltero";
+                    datosEstadoCivil = "Soltero";
                 break;
             case R.id.radio_Casado:
                 if (checked)
-                    str = "Casado";
+                    datosEstadoCivil = "Casado";
                 break;
             case R.id.radio_Divorciado:
                 if (checked)
-                    str = "Divorciado";
+                    datosEstadoCivil = "Divorciado";
                 break;
             case R.id.radio_Viudo:
                 if (checked)
-                    str = "Viudo";
+                    datosEstadoCivil = "Viudo";
                 break;
         }
-        datosEstadoCivil=str;
+
     }
 
 
@@ -111,10 +111,10 @@ public class MainActivity extends AppCompatActivity {
                 " Preferencias: "+datosPreferencias +"\n"+
                 " Estado Civil: "+datosEstadoCivil);
 
-        datosNombre="";
-        datosApellido="";
+//        datosNombre="";
+//        datosApellido="";
         datosPreferencias="";
-        datosEstadoCivil="";
+//        datosEstadoCivil="";
 
     }
 
